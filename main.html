@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="box">
+        <h1 class="hi">Hola</h1>
+    </div>
+    <button>Cambiar Color</button>
+</div>
+<style>
+    .container {
+        /*   height: 90vh; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-style: solid;
+        border-radius: 50px;
+        width: 400px;
+        height: 200px;
+    }
+
+    button {
+        padding: 10px;
+    }
+
+    .hi {
+        color: red;
+    }
+
+    .blue {
+        color: blue;
+    }
+</style>
+<script>
+    document.querySelector("button").addEventListener('click', () => {
+        document.querySelector(".hi").classList.toggle('blue')
+    })
+</script>
